@@ -1,0 +1,18 @@
+// colors
+$cornflower-Blue: #09A6D4;
+$tory-blue: #125392;
+$white: #fff;
+$opacity-7: rgba(0,0,0,.7);
+
+
+// breakpoints
+
+$bp-mobile: 300px;
+$bp-tablet: 600px;
+$bp-desktop: 1024px;
+
+$bps: (
+  'mobile': $bp-mobile,
+  'tablet': $bp-tablet,
+  'desktop': $bp-desktop
+);

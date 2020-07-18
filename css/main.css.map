@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AKAA,OAAO,CAAC,4IAAI,CDAZ,AAAA,CAAC,CACD,CAAC,AAAA,OAAO,CACR,CAAC,AAAA,QAAQ,AAAC,CACP,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,OAAO,CACrB,AAED,AAAA,IAAI,AAAC,CACF,UAAU,CAAE,UAAU,CACxB,ACRD,AAAA,IAAI,AAAC,CACD,WAAW,CAAE,uBAAuB,CACpC,WAAW,CAAE,GAAG,CACnB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/abstracts/_mixins.scss",
+        "../sass/abstracts/_variables.scss",
+        "../sass/base/_animations.scss",
+        "../sass/base/_base.scss",
+        "../sass/base/_typography.scss",
+        "../sass/base/_utilities.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
