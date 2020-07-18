@@ -1,5 +1,5 @@
 // colors
-$cornflower-Blue: #09A6D4;
+$cornflower-blue: #09A6D4;
 $tory-blue: #125392;
 $white: #fff;
 $opacity-7: rgba(0,0,0,.7);
@@ -16,3 +16,7 @@ $bps: (
   'tablet': $bp-tablet,
   'desktop': $bp-desktop
 );
+
+//font size rem
+
+$base-font-size: 16px;
