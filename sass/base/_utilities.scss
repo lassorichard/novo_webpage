@@ -1,0 +1,12 @@
+// Content width
+
+ .content-width {
+     padding: 0 18px;
+
+     @include from (tablet) {
+        padding: 0 5%;
+     }
+     @include from (desktop) {
+        padding: 0 25%;
+     }
+ }

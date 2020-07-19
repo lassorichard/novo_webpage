@@ -1,34 +1,31 @@
 .btn {
     align-items: center;
     border-radius: 30px;
+    cursor: pointer;
     display: flex;
     height: 32px;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    max-width: 150px;
     padding: 10px;
     text-transform: uppercase;
-    max-width: 133px;
     width: 100%;
-    cursor: pointer;
 
     @include from(tablet) {
         height: 40px;
-        width: 133px;
         max-width: initial;
+        width: 150px;
     }
 
-    @include from(desktop) {
-        height: 50px;
-        width: 200px;
-        max-width: initial;
-    }
 
         &__icon {
             display: flex;
             img {
                 width: 50%;
+
                 @include from(tablet) {
                     width: 70%;
                 }
+
                 @include from(desktop) {
                     width: 80%;
                 }
@@ -40,7 +37,8 @@
             color: $cornflower-blue;
         }
         &--footer {
-            @include from(tablet) {
+            font-weight: 800;
+            @include from(desktop) {
                 &:not(:last-child) {
                     margin-right: 20px;
                 }
@@ -48,3 +46,12 @@
         }
 }
 
+// Close button
+
+#close {
+    background: $cornflower-blue;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 7px;
+    width: 27px;
+}

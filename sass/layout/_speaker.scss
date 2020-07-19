@@ -1,0 +1,81 @@
+.speaker {
+    &__container {
+        @include from (tablet) {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            flex-basis: calc(50% / 2);
+        }
+    }
+
+    &__profile {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 22px 15% 0 15%;
+        text-align: center;
+        
+        @include from (tablet) {
+            flex-direction: row;
+            padding: 0;
+            width: 700px;
+        }
+
+        @include from (tablet) {
+            flex-direction: row;
+            padding: 0;
+            width: 500px;
+        }
+        
+
+        &--img {
+            background: $cornflower-blue;
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+            padding: 5px;
+
+            @include from (tablet) {
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        &--info {
+            border-bottom: 2px solid $tory-blue;
+            padding: 20px 0;
+
+            @include from (tablet) {
+                text-align: left;
+                padding: 0 20px;
+                border-bottom: initial;
+                border-right: 2px solid $tory-blue;
+            }
+        }
+    }
+
+    &__event-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 15% 67px 15%;
+
+        @include from (tablet) {
+            text-align: left;
+            padding: 0 0 0 20px;
+            align-items: flex-start;
+        }
+
+        &--schedule {
+            padding-top: 10px;
+
+            @include from (tablet) {
+                padding: 0;
+            }
+        }
+
+    }
+}

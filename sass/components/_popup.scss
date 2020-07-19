@@ -1,0 +1,42 @@
+// footer pop up
+
+.footer-popup {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    &__top {
+        // z-index: 10;
+        height: 25vh;
+        background: $opacity-7;
+
+        @include from (tablet) {
+            height: 70vh;
+        }
+    }
+    &__bottom {
+        background: $white;
+        height: 75vh;
+        position: relative;
+        
+        @include from (tablet) {
+            height: 25vh;
+        }
+    }
+    &__icon-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 7px 12px 0 0;
+
+        @include from (tablet) {
+            padding: 14px 14px 0 0;
+        }
+    }
+}
+
+.active-popup {
+    display: inline-block;
+}

@@ -1,29 +1,27 @@
 .footer {
-    background: $cornflower-blue;
-    padding: 24px 18px 76px 18px; 
-    display: flex;
     align-items: center;
+    background: $cornflower-blue;
+    display: flex;
     justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 76px;
 
     @include from(tablet) {
-        padding: 93px 351px; 
+        padding-top: 93px;
+        padding-bottom: 93px;
     }
-    
 
         &__container {
             align-items: center;
-            justify-items: center;
             display: grid;
             grid-gap: 18px;
             grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
             text-align: center;
             
-            @include from(tablet) {
+            @include from(desktop) {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
             }
         }
-        
-
-        
 }
