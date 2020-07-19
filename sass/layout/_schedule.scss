@@ -1,0 +1,60 @@
+.schedule {
+    z-index: 20;
+
+    &__conferences-container {
+        display: grid;
+        grid-gap: 20px 0;
+        padding: 40px;
+        text-align: center;
+
+        @include from (tablet) {
+            padding: 40px 10%;
+        }
+
+        @include from (desktop) {
+            padding: 40px 20%;
+        }
+
+        &--1 {
+    
+            @include from (tablet) {
+                align-items: center;
+                display: grid;
+                grid-template-columns: repeat(2 , 1fr);
+                margin: 8px;
+                text-align: left;
+                &:not(:last-child) {
+                    border-bottom: 1px solid $dusty-gray;
+                }
+            }
+        }
+
+    }
+
+    &__profile {
+        border-bottom: 1px solid $cornflower-blue; 
+        margin: 0 20% 5px 20% ;
+        padding-bottom: 5px;
+
+        @include from (tablet) {
+            border-bottom: initial;
+            margin-bottom: 0;
+            padding-bottom: 0;
+
+            &:not(:last-child) {
+                border-right: 1px solid $dusty-gray;
+            }
+        }
+        
+    }
+
+    &__conference-info {
+        border-bottom: 1px solid $cornflower-blue; 
+        margin: 0 10% 0 10% ;
+        padding-bottom: 20px;
+        
+        @include from (tablet) {
+            border-bottom: initial;
+        }
+    }
+}

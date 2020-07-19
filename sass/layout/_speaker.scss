@@ -1,12 +1,12 @@
 .speaker {
+    z-index: 10;
     &__container {
         @include from (tablet) {
-            display: flex;
             align-items: center;
+            display: flex;
             justify-content: space-evenly;
-            padding-top: 5%;
             padding-bottom: 5%;
-            flex-basis: calc(50% / 2);
+            padding-top: 5%;
         }
     }
 
@@ -34,8 +34,8 @@
             background: $cornflower-blue;
             border-radius: 50%;
             height: 120px;
-            width: 120px;
             padding: 5px;
+            width: 120px;
 
             @include from (tablet) {
                 height: 100px;
@@ -44,29 +44,29 @@
         }
 
         &--info {
-            border-bottom: 2px solid $tory-blue;
+            border-bottom: 1px solid $tory-blue;
             padding: 20px 0;
 
             @include from (tablet) {
-                text-align: left;
-                padding: 0 20px;
                 border-bottom: initial;
                 border-right: 2px solid $tory-blue;
+                padding: 0 20px;
+                text-align: left;
             }
         }
     }
 
     &__event-info {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
         padding: 20px 15% 67px 15%;
+        text-align: center;
 
         @include from (tablet) {
-            text-align: left;
-            padding: 0 0 0 20px;
             align-items: flex-start;
+            padding: 0 0 0 20px;
+            text-align: left;
         }
 
         &--schedule {

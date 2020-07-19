@@ -3,12 +3,12 @@
     background: $cornflower-blue;
     display: flex;
     justify-content: center;
-    padding-top: 24px;
     padding-bottom: 76px;
+    padding-top: 24px;
 
     @include from(tablet) {
-        padding-top: 93px;
         padding-bottom: 93px;
+        padding-top: 93px;
     }
 
         &__container {

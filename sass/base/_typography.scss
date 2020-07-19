@@ -22,16 +22,44 @@ body {
 
 .heading-secondary {
     color: $tory-blue;
+    font-weight: 800;
     text-transform: capitalize;
     @include font-size (20px);
-    font-weight: 700;
+    
+
+    &--small {
+        @include font-size (14px);
+
+        @include from(tablet) {
+            @include font-size (16px);
+        }
+
+        @include from(desktop) {
+            @include font-size (22px);
+        }
+    }
+    
 }
 
 .heading-tertiary {
     color: $cornflower-blue;
-    text-transform: uppercase;
     line-height: 24px;
+    text-transform: uppercase;
     @include font-size (15px);
+
+    &--small {
+        @include font-size (8px);
+        line-height: 12px;
+
+        @include from(tablet) {
+            @include font-size (10px);
+        }
+
+        @include from(desktop) {
+            line-height: 18px;
+            @include font-size (15px);
+        }
+    }
 }
 
 .heading-quaternary {
@@ -39,16 +67,53 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     @include font-size (16px);
+
+    &--small {
+        @include font-size (8px);
+
+        @include from(tablet) {
+            @include font-size (10px);
+        }
+
+        @include from(desktop) {
+            @include font-size (15px);
+        }
+    }
 }
 
 .heading-quinary {
     color: $tory-blue;
+    font-weight: 800;
     text-transform: capitalize;
     @include font-size (20px);
-    font-weight: 800;
+   
+
+    &--small {
+        @include font-size (14px);
+
+        @include from(tablet) {
+            @include font-size (16px);
+        }
+
+        @include from(desktop) {
+            @include font-size (17px);
+        }
+    }
 }
 
 .meridiem {
     font-variant: small-caps;
     @include font-size (12px);
+
+    &--small {
+        @include font-size (8px);
+
+        @include from(tablet) {
+            @include font-size (10px);
+        }
+
+        @include from(desktop) {
+            @include font-size (12px);
+        }
+    }
 }
