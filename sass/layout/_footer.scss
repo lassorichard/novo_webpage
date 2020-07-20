@@ -5,10 +5,15 @@
     justify-content: center;
     padding-bottom: 76px;
     padding-top: 24px;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 
     @include from(tablet) {
-        padding-bottom: 93px;
-        padding-top: 93px;
+        padding-bottom: initial;
+        padding-top: initial;
+        height: 200px;
     }
 
         &__container {

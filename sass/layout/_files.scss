@@ -7,6 +7,8 @@
         overflow-y: scroll;
         padding: 40px 20% 70px 20%;
         text-align: center;
+        min-height: 200px;
+        
 
         @include from (tablet) {
             align-items: center;
@@ -33,6 +35,7 @@
 
         img {
             width: 100%;
+            max-width: 240px;
         }
     }
 }

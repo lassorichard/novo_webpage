@@ -3,9 +3,13 @@
 .footer-popup {
     display: none;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 
     &__top {
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0;
         width: 100%;
