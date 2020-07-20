@@ -1,19 +1,19 @@
 .footer {
     align-items: center;
     background: $cornflower-blue;
+    bottom: 0;
     display: flex;
     justify-content: center;
+    left: 0;
     padding-bottom: 76px;
     padding-top: 24px;
     position: static;
-    bottom: 0;
-    left: 0;
     width: 100%;
 
     @include from(tablet) {
+        height: 200px;
         padding-bottom: initial;
         padding-top: initial;
-        height: 200px;
     }
 
         &__container {

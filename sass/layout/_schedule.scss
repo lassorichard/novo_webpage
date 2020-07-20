@@ -1,5 +1,6 @@
 .schedule {
     z-index: 20;
+
     &__conferences-container {
         display: grid;
         grid-gap: 20px 0;
@@ -22,6 +23,7 @@
                 grid-template-columns: repeat(2 , 1fr);
                 margin: 8px;
                 text-align: left;
+
                 &:not(:last-child) {
                     border-bottom: 1px solid $dusty-gray;
                 }

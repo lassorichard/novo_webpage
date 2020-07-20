@@ -1,0 +1,16 @@
+.media-title {
+    padding: 20px 0;
+    display: block;
+    text-align: center;
+}
+
+.search {
+    display: grid;
+    text-align: center;
+    padding: 0 35px;
+    grid-gap: 5px;
+
+    &__box {
+        border: 2px solid $cornflower-blue;
+    }
+}
