@@ -1,10 +1,9 @@
 .schedule {
     z-index: 20;
-    display: none;
     &__conferences-container {
         display: grid;
         grid-gap: 20px 0;
-        padding: 40px;
+        padding: 40px 40px 70px 40px;
         text-align: center;
 
         @include from (tablet) {

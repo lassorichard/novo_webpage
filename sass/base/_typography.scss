@@ -25,6 +25,11 @@ body {
     font-weight: 800;
     text-transform: capitalize;
     @include font-size (20px);
+
+        @include from(tablet) {
+            @include font-size (26px);
+            color: $cornflower-blue;
+        }   
     
 
     &--small {
@@ -32,6 +37,7 @@ body {
 
         @include from(tablet) {
             @include font-size (16px);
+            color: $cornflower-blue;
         }
 
         @include from(desktop) {
@@ -46,6 +52,10 @@ body {
     line-height: 24px;
     text-transform: uppercase;
     @include font-size (15px);
+
+    @include from(tablet) {
+        @include font-size (20px);
+    }
 
     &--small {
         @include font-size (8px);
@@ -68,11 +78,21 @@ body {
     text-transform: uppercase;
     @include font-size (16px);
 
+    @include from(tablet) {
+        @include font-size (20px);
+        color: $tory-blue;
+    }
+
+    @include from(tablet) {
+        @include font-size (19px);
+    }
+
     &--small {
         @include font-size (8px);
 
         @include from(tablet) {
             @include font-size (10px);
+            color: $tory-blue;
         }
 
         @include from(desktop) {
@@ -87,6 +107,9 @@ body {
     text-transform: capitalize;
     @include font-size (20px);
    
+    @include from(tablet) {
+        @include font-size (22px);
+    }
 
     &--small {
         @include font-size (14px);
@@ -104,6 +127,10 @@ body {
 .meridiem {
     font-variant: small-caps;
     @include font-size (12px);
+
+    @include from(tablet) {
+        @include font-size (16px);
+    }
 
     &--small {
         @include font-size (8px);

@@ -1,0 +1,25 @@
+.language {
+    z-index: 40;
+    &__container {
+        display: grid;
+        padding: 40px 20% 70px 20%;
+        text-align: center;
+        
+        @include from (tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__spanish {
+        border-bottom: 1px solid $tory-blue;
+        padding: 20px 0;
+
+        @include from (tablet) {
+            border-bottom: initial;
+        }
+    }
+
+    &__english {
+        padding: 20px 0;
+    }
+}
