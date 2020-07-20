@@ -1,0 +1,38 @@
+.files {
+    z-index: 40;
+    display: none;
+    &__container {
+        display: grid;
+        grid-gap: 20px 0;
+        overflow-y: scroll;
+        padding: 40px 20% 70px 20%;
+        text-align: center;
+
+        @include from (tablet) {
+            align-items: center;
+            grid-gap: 0 10px;
+            grid-template-columns: repeat(3 , 1fr);
+            padding: 20px 15%;
+        }
+
+        @include from (desktop) {
+            grid-gap: 0 20px;
+            padding: 30px 15%;
+        }
+    }
+
+    &__icon {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50% , -50%);
+    }
+
+    &__image {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+    }
+}

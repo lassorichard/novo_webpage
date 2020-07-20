@@ -1,5 +1,6 @@
 .speaker {
     z-index: 10;
+    display: none;
     &__container {
         @include from (tablet) {
             align-items: center;
