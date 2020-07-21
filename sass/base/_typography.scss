@@ -6,6 +6,13 @@ body {
     letter-spacing: 1.4px;
 }
 
+input {
+    color: $dove-gray;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 .btn {
     font-weight: 700;
     @include font-size (8px);
@@ -112,6 +119,29 @@ a {
    
     @include from(tablet) {
         @include font-size (22px);
+    }
+
+    &--small {
+        @include font-size (14px);
+
+        @include from(tablet) {
+            @include font-size (16px);
+        }
+
+        @include from(desktop) {
+            @include font-size (17px);
+        }
+    }
+}
+
+.heading-senary {
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include font-size (8px);
+   
+    @include from(tablet) {
+        @include font-size (12px);
     }
 
     &--small {
