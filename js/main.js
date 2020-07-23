@@ -29,7 +29,7 @@ btnPopup.forEach(item => {
 
 close.forEach(item => {
   item.addEventListener('click', event => {
-    console.log("CLOSE")
+    event.stopPropagation();
     let popup = document.querySelectorAll('.footer-popup');
     let popupmedia = document.querySelectorAll('.media__popup');
     popup.forEach(item => {
@@ -37,7 +37,6 @@ close.forEach(item => {
       body.style.overflow = 'visible';
     });
     popupmedia.forEach(item => {
-      console.log("CLASS", item)
       item.classList.remove('active-popup--media');
       body.style.overflow = 'visible';
     });
@@ -46,10 +45,9 @@ close.forEach(item => {
 
 // Box slider
 
-// $('.bxslider').bxSlider({
-//     slideMargin: 10,
-//     minSlides: 4,
-//     maxSlides: 10,
-//     slideWidth: 300,
+$('.bxslider').bxSlider({
+    minSlides: 4,
+    maxSlides: 10,
+    slideWidth: 300,
     
-//   });
+  });
