@@ -5,7 +5,9 @@ let
 
 const
     btnFooter = document.querySelectorAll('.btn--footer'),
-    close = document.querySelectorAll('.close');
+    close = document.querySelectorAll('.close'),
+    btnPopup = document.querySelectorAll('.btn-popup'),
+    closeM = document.querySelectorAll('.close-media');
 
 btnFooter.forEach(item => {
   item.addEventListener('click', event => {
@@ -16,24 +18,6 @@ btnFooter.forEach(item => {
   })
 });
 
-close.forEach(item => {
-  item.addEventListener('click', event => {
-    let popup = document.querySelectorAll('.footer-popup');
-    popup.forEach(item => {
-      item.classList.remove('active-popup');
-      body.style.overflow = 'visible';
-    })
-  })
-});
-
-// MEDIA POP UP
-
-const
-    btnPopup = document.querySelectorAll('.btn-popup'),
-    closeMedia = document.querySelectorAll('.close-media');;
-
-    console.log(btnPopup);
-
 btnPopup.forEach(item => {
   item.addEventListener('click', event => {
     let index = Array.prototype.slice.call(item.parentElement.children).indexOf(item);
@@ -43,23 +27,29 @@ btnPopup.forEach(item => {
   })
 });
 
-closeMedia.forEach(item => {
+close.forEach(item => {
   item.addEventListener('click', event => {
-    let popup = document.querySelectorAll('.media__popup');
+    console.log("CLOSE")
+    let popup = document.querySelectorAll('.footer-popup');
+    let popupmedia = document.querySelectorAll('.media__popup');
     popup.forEach(item => {
+      item.classList.remove('active-popup');
+      body.style.overflow = 'visible';
+    });
+    popupmedia.forEach(item => {
+      console.log("CLASS", item)
       item.classList.remove('active-popup--media');
       body.style.overflow = 'visible';
-    })
+    });
   })
 });
 
-
 // Box slider
 
-$('.bxslider').bxSlider({
-    slideMargin: 10,
-    minSlides: 4,
-    maxSlides: 10,
-    slideWidth: 300,
+// $('.bxslider').bxSlider({
+//     slideMargin: 10,
+//     minSlides: 4,
+//     maxSlides: 10,
+//     slideWidth: 300,
     
-  });
+//   });
