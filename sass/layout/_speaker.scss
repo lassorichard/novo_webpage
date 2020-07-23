@@ -21,15 +21,15 @@
                 align-items: center;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                padding: 0 20px;
                 text-align: left;
             }
 
                 &--photo {
                     padding: 0 25% 20px;
+
                     @include from (tablet) {
                         justify-self: flex-end;
-                        padding: 10% 20px;
+                        padding: 0 15px 0 0;
                     }
 
                     img {

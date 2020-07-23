@@ -38,6 +38,59 @@
     }
 }
 
+.media__popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $opacity-8;
+
+    &--container {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include from (tablet) {
+            padding: 0 15%;
+        }
+
+        @include from (desktop) {
+            padding: 0 25%;
+        }
+
+        &--header {
+            display: flex;
+            align-items: center;         
+
+            &--title {
+                padding: 8px;
+                background: $cornflower-blue;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            &--close {
+                margin: 0 5px 5px;
+            }
+        }
+        &--media {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+}
+
 .active-popup {
     display: inline-block;
+
+    &--media {
+        display: flex;
+    }
 }

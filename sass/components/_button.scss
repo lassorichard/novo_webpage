@@ -37,6 +37,7 @@
             background: $white;
             color: $cornflower-blue;
         }
+        
         &--footer {
             font-weight: 800;
 
@@ -55,5 +56,5 @@
     border-radius: 50%;
     cursor: pointer;
     padding: 7px;
-    width: 27px;
+    max-width: 27px;
 }
