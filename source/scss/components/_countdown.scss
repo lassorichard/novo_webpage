@@ -1,0 +1,92 @@
+.countdown {
+    background: transparent!important;
+
+    &__container {
+        display: block;
+
+        @include from (desktop) {
+            align-items: center;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        &--header {
+            align-items: center;
+            display: flex!important;
+            margin: 0!important;
+            max-width: initial;
+            padding-left: 20px;
+            
+            @include from (desktop) {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            
+            h2 {
+                border-bottom: 3px var(--cornflower-blue) solid;
+                margin-bottom: 10px;
+                padding: 20px 10px 10px 0;
+                
+                &:not(:last-child) {
+                    padding-right: 10px;
+
+                    @include from (desktop) {
+                        padding-right: 90px;
+                    }
+                }
+
+                @include from (desktop) {
+                    border-bottom: none;
+                    margin-bottom: 0;
+                    padding: 0;
+
+                    &:not(:last-child) {
+                        border-bottom: 3px var(--cornflower-blue) solid;
+                    }
+                }
+            }
+        }
+
+        &--time-container {
+            max-width: initial;
+            padding: 0;
+
+            &--number {
+                display: flex;
+                font-size: 2.6rem!important;
+                justify-content: center;
+                // max-width: initial;
+
+                @include from (tablet) {
+                    font-size: 4rem!important;
+                }
+            }
+
+            &--footer {
+                display: flex;
+                justify-content: space-around;
+                margin: 0px auto;
+                max-width: 400px;
+                padding: 10px 30px 0px 0px;
+
+                @include from (tablet) {
+                    max-width: 500px;
+                }
+            }
+        }
+
+        &--line {
+            display: none;
+            margin-top: 0!important;
+            padding: 0;
+
+            @include from (desktop) {
+                display: block;
+            }
+
+            hr {
+                background: var(--cornflower-blue);
+            }           
+        }
+    }
+}

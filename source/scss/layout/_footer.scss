@@ -1,0 +1,32 @@
+
+.footer {
+    align-items: center;
+    background: var(--cornflower-blue);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    padding-bottom: 76px;
+    padding-top: 24px;
+    width: 100%;
+
+    @include from(tablet) {
+        height: 150px;
+        padding-bottom: initial;
+        padding-top: initial;
+    }
+
+        &__container {
+            align-items: center;
+            display: grid;
+            grid-gap: 18px;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            text-align: center;
+            
+            @include from(desktop) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+}

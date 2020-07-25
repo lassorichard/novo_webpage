@@ -1,0 +1,101 @@
+/*!
+Theme Name: Feria Virtual Sosadiaz
+Theme URI: https://www.loorlab.com/
+Author: LOOR Lab
+Author URI: https://www.loorlab.com/
+Description: Feria Virtual Sosa Diaz
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: Feria Virtual Sosadiaz
+License URI: https://www.loorlab.com/
+Text Domain: fvs
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Feria Virtual Sosadiaz is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+@charset "UTF-8";
+
+/*CSS V1*/
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  color: #13a4d3;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7em;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif !important;
+  color: #13a4d3;
+  margin: 0;
+}
+.fvs-color-1{background-color: #13a4d3;}
+
+/*CUSTOM CSS*/
+/*Font-Awesome*/
+.fa-bars {color: #13a4d3;font-size: 2em;}
+.fa-clock{color: #989898 !important;font-size: 2em;} 
+.fa-image , .fa-file-pdf , .fa-youtube{color: #fff !important;font-size: 3.2em;}
+.fa-envelope , .fa-facebook-square , .fa-instagram-square , .fa-whatsapp-square{font-size: 1.4em;vertical-align: middle;}
+
+
+
+/**/
+/* HEADER*/
+.dropdown-menu {margin-top: .75rem;}
+a.nav-link span{color: #13a4d3;font-weight: 600;}
+.left-fvs #navbarDropdown{margin-top: 45px;}
+.navbar{height: 100px;}
+/* HOME */
+#countdown { color: #13a4d3; font-family: 'Open Sans', sans-serif; font-size: 4.8rem; font-weight:700; letter-spacing: 15px;  }
+#units span {float: left; width: 32%; text-align: center; margin-top: -15px; color: #115294; text-transform: uppercase; font-size: 13px; letter-spacing: 2px;}
+.tr-fvs{padding: 20px;}
+.tr-fvs p{font-size: 1rem; color: #115294; font-weight:700; height: 10px; }
+.tr-fvs hr{background: #13a4d3; height: 2px; margin:0px;}
+.rounded-circle{border:3px solid #13a4d3; border-radius:50%;}
+.section-title{font-size: 1rem; color: #115294; font-weight:700; height: 50px;}
+.weglot-default {right: auto!important;float: left!important;}
+.medios-categories{  padding-top: 3em;  padding-bottom: 3em;  background-size: cover;}
+.medios-categories .card{  transition: all 0.2s;}
+.medios-categories .card-title{color: #fff; padding-top: 0.5em;}
+.medios-categories a:hover{  text-decoration: none;}
+.medios-card{  background: #13a4d3 !important;  border: 0; height: 180px;}
+.medios-card:hover{  background: #fff;  border-right: 5px solid orange;  border-left: 5px solid orange;}
+/* FOOTER */
+.site-footer{background-color: #13a4d3;}
+.site-info a{color:#335490; font-size: 17px; font-weight: bold;}
+/*PAGES*/
+
+.entry-title {color:#125393 !important;font-size: 1rem !important; font-weight:700 !important; padding: 15px; text-transform: uppercase;letter-spacing: 4px;}
+
+
+/* MEDIA QUERIES*/
+@media (max-width: 1200px) {
+    
+    .left-fvs #navbarDropdown{margin-top: 20px;}
+    #countdown {font-size: 1.5rem;letter-spacing: 10px;}
+    
+}
+
+
+
+
