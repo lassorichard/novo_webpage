@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+input {
+    color: var(--dove-gray);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.button-1 {
+    font-weight: 700;
+    @include font-size (8px);
+
+    @include from(tablet) {
+        @include font-size (12px)
+    }
+
+    @include from(desktop) {
+        @include font-size (14px)
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+select {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: var(--dove-gray);
+    text-transform: uppercase;
+}
+
+.heading-secondary {
+    color: var(--tory-blue);
+    font-weight: 800;
+    text-transform: capitalize;
+    @include font-size (20px);
+
+        @include from(tablet) {
+            @include font-size (22px);
+            color: var(--cornflower-blue);
+        }   
+    
+
+    &--small {
+        @include font-size (14px);
+
+        @include from(tablet) {
+            @include font-size (16px);
+            color: var(--cornflower-blue);
+        }
+
+        @include from(desktop) {
+            @include font-size (22px);
+        }
+    }
+    
+}
+
+.heading-tertiary {
+    color: var(--cornflower-blue);
+    line-height: 24px;
+    text-transform: uppercase;
+    @include font-size (15px);
+
+    @include from(tablet) {
+        @include font-size (17px);
+    }
+
+    &--small {
+        @include font-size (8px);
+        line-height: 12px;
+
+        @include from(tablet) {
+            @include font-size (10px);
+        }
+
+        @include from(desktop) {
+            line-height: 18px;
+            @include font-size (15px);
+        }
+    }
+}
+
+.heading-quaternary {
+    color: var(--cornflower-blue);
+    font-weight: 400;
+    text-transform: uppercase;
+    @include font-size (16px);
+
+    @include from(tablet) {
+        @include font-size (20px);
+        color: var(--tory-blue);
+    }
+
+    @include from(tablet) {
+        @include font-size (19px);
+    }
+
+    &--small {
+        @include font-size (8px);
+
+        @include from(tablet) {
+            @include font-size (10px);
+            color: var(--tory-blue);
+        }
+
+        @include from(desktop) {
+            @include font-size (15px);
+        }
+    }
+}
+
+.heading-quinary {
+    color: var(--tory-blue);
+    font-weight: 800;
+    text-transform: capitalize;
+    @include font-size (20px);
+   
+    @include from(tablet) {
+        @include font-size (22px);
+    }
+
+    &--small {
+        @include font-size (14px);
+
+        @include from(tablet) {
+            @include font-size (16px);
+        }
+
+        @include from(desktop) {
+            @include font-size (17px);
+        }
+    }
+}
+
+.heading-senary {
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    @include font-size (8px);
+   
+    @include from(tablet) {
+        @include font-size (12px);
+    }
+
+    &--small {
+        @include font-size (14px);
+
+        @include from(tablet) {
+            @include font-size (16px);
+        }
+
+        @include from(desktop) {
+            @include font-size (17px);
+        }
+    }
+}
+
+.meridiem {
+    font-variant: small-caps;
+    @include font-size (12px);
+
+    @include from(tablet) {
+        @include font-size (16px);
+    }
+
+    &--small {
+        @include font-size (8px);
+
+        @include from(tablet) {
+            @include font-size (10px);
+        }
+
+        @include from(desktop) {
+            @include font-size (12px);
+        }
+    }
+}

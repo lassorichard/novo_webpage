@@ -1,0 +1,74 @@
+.home-speakers {
+    margin-bottom: 0!important;
+    margin: 0 auto;
+    padding: 20px;
+
+    &__estructure {
+        display: flex;
+        flex-direction: column;
+
+        @include from (desktop) {
+            flex-direction: row;
+        }
+        
+        &--header {
+            display: flex;
+            margin-bottom: 50px;
+            max-width: initial;
+            padding-left: 0;
+
+            @include from (tablet) {
+                padding: 0;
+            }
+
+            @include from (desktop) {
+                margin-bottom: 0;
+            }
+            
+            h2 {
+                border-bottom: 3px var(--cornflower-blue) solid;
+                padding: 0 10px 10px 0;
+
+                @include from (tablet) {
+                    border-bottom: initial;
+                }
+            }
+        }
+
+        &--container {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: initial;
+            padding: 0;
+            text-align: center;
+
+            @include from (tablet) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include from (desktop) {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+    }
+}
+
+.etn-speaker-item {
+    margin-bottom: 0;
+}
+.etn-speaker-content {
+    padding-bottom: 0!important;
+
+    p {
+        margin: 0!important;
+    }
+}
+
+.etn-speaker-title {
+    margin: 0!important;
+}
+
+.dropdown-menu {
+    background: rgba(255,255,255,.7)!important;
+}
