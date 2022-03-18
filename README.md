@@ -1,5 +1,5 @@
 # Novo Webpage
-> Este proyecto es desarrollado por [Richard Lasso Ledesma]
+> Developed by [Richard Lasso Ledesma]
 
 ## Deployment
 
